@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # Java (Maven)
+  - package-ecosystem: "maven"
+    directory: "/" # Change if your pom.xml is in a subdirectory
+    schedule:
+      interval: "weekly"
+
+  # JavaScript (npm)
+  - package-ecosystem: "npm"
+    directory: "/" # Change if your package.json is in a subdirectory
+    schedule:
+      interval: "weekly"
+
+  # Terraform (HCL)
+  - package-ecosystem: "terraform"
+    directory: "/" # Change if your .tf files are in a subdirectory
+    schedule:
+      interval: "weekly"
